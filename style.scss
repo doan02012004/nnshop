@@ -2252,13 +2252,48 @@ img {
         &-wrapper{
             background-color: #fff;
             position: relative;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
+        }
+        &_title{
+            margin: 0;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            color: #B88E2F;
+            margin: 10px 0;
         }
         &-item{
             &_input{
                width: 250px;
+               height: 50px;
                 padding: 0 10px;
+            }
+            &_name{
+                font-size: 16px;
+                color: #B88E2F;
+                font-weight: 500;
+            }
+        }
+        &-btn{
+            text-align: center;
+            margin: 20px 0;
+            &_item{
+                font-size: 18px;
+                font-weight: 500;
+                color: #000;
+                background-color: #F9F1E7;
+                padding: 15px 50px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(0.9);
+                    transition: 0.35s ease-in-out;
+                    background-color: #B88E2F;
+                    color: #fff;
+                }
             }
         }
         &-different{
