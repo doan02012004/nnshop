@@ -7,10 +7,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        shop: resolve(__dirname, './asset/cuahang.html'),
-        datail: resolve(__dirname, './asset/chitietsanpham.html'),
-        cart: resolve(__dirname, './asset/giohang.html'),
-        pay: resolve(__dirname, './asset/thanhtoan.html')
+        shop: resolve(__dirname, './layout/shop.html'),
+        detail: resolve(__dirname, './layout/product.html'),
+        cart: resolve(__dirname, './layout/cart.html'),
+        pay: resolve(__dirname, './layout/pay.html')
       },
     },
   },
