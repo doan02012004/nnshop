@@ -162,9 +162,9 @@
           </div>
           <div class="product-detail-content-btn">
             <div class="product-detail-content-btn_quantity">
-              <span class="product-detail-content-btn_knot">-</span>
-              <input class="product-detail-content-btn_input" type="text" value="1">
-              <span class="product-detail-content-btn_knot">+</span>
+              <span class="product-detail-content-btn_knot reduced ">-</span>
+              <input class="product-detail-content-btn_input product-quantity" type="text" value="1" disabled>
+              <span class="product-detail-content-btn_knot increase">+</span>
             </div>
             <button class="product-detail-content-btn_btn">Add To Cart</button>
             <button class="product-detail-content-btn_btn">Compare</button>
@@ -381,6 +381,18 @@
     const close = document.querySelector(".login-close");
     const open = document.querySelector(".header-block-dropmenu_btn");
     const sectionlogin = document.querySelector(".login");
+    const reduced = document.querySelector(".reduced");
+    const increase = document.querySelector(".increase");
+    const inputQuantity = document.querySelector(".product-quantity");
+   
+    reduced.addEventListener("click",()=>{
+        if(inputQuantity.value>1){
+          inputQuantity.value--;
+        }
+    })
+    increase.addEventListener("click",()=>{ 
+          inputQuantity.value++;
+    })
     checkopen.addEventListener('click', () => {
       // headernav.style.display = 'Block';
       headernav.style.left = 0;
@@ -402,6 +414,7 @@
       document.querySelector(".login").style.opacity = "1"
       document.querySelector(".login").style.height = "100vh";
     })
+    
   </script>
 </body>
 

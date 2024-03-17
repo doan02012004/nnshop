@@ -1171,6 +1171,11 @@ img {
                 text-align: center;
                 font-size: 20px;
                 cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 0.35s ease;
+                    color: #B88E2F;
+                }
             }
             &_btn{
                 width: 215px;
@@ -1181,6 +1186,11 @@ img {
                 outline: none;
                 background-color: transparent;
                 font-size: 20px;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(0.95);
+                    transition: 0.35s ease;
+                }
             }
         }
         &-extra{
