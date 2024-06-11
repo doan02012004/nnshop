@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 body {
   font-family: "Lexend", sans-serif;
 }
@@ -8,8 +10,7 @@ body {
   @apply max-w-7xl mx-auto px-4;
 }
 .btn {
-  @apply h-[40px] leading-[40px] bg-primary rounded-full text-white inline-block text-sm px-6 transition ease-in-out duration-300
-  ;
+  @apply h-[40px] leading-[40px] bg-primary rounded-full text-white inline-block text-sm px-6 transition ease-in-out duration-300;
 }
 .btn:hover,
 .btn-lg:hover {
@@ -24,12 +25,19 @@ body {
 .main-title {
   @apply text-[32px]/[120%] lg:mb-5 lg:text-[64px]/[110%] -tracking-[1.5px] lg:-tracking-[4px];
 }
+
 .filter{
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .filter::-webkit-scrollbar{
     display: none;
+}
+.topsell-next::after,
+.topsell-prev::after,
+.panel-next::after,
+.panel-prev::after {
+  display: none;
 }
 @media (min-width: 768px) {
   .lg\:btn {
