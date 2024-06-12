@@ -7,7 +7,7 @@ body {
   font-family: "Lexend", sans-serif;
 }
  
- @layer components {
+ @layer utilities {
     .container {
         @apply max-w-7xl mx-auto px-4;
       }
