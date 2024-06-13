@@ -3,6 +3,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  root: './', // Thư mục gốc của dự án
   build: {
     outDir: 'dist', // Thư mục đầu ra sau khi build
     rollupOptions: {
