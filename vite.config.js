@@ -10,8 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         product: resolve(__dirname, './product.html'),
         detail: resolve(__dirname, './product-detail.html'),
-        product1: resolve(__dirname, './src/product1.html'),
-        productdetail: resolve(__dirname, './src/product-detail1.html'),
+    
       },
     },
   },
