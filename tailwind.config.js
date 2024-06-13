@@ -8,6 +8,9 @@ export default {
               secondary: "#05422C",
               "neutral-400": "#F4F4F4",
           },
+          backgroundColor:{
+            primary: "#17AF26",
+          },
           backgroundSize: {
               "50%": "50%",
           },

@@ -16,7 +16,7 @@ body {
       }
       .btn:hover,
       .btn-lg:hover {
-        @apply bg-green-700 shadow-md;
+        @apply bg-green-700 shadow-md ;
       }
       .btn-lg {
         @apply  h-[64px] leading-[64px] px-28 text-lg  bg-primary;
