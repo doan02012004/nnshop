@@ -6,10 +6,12 @@ export default {
           colors: {
               primary: "#17AF26",
               secondary: "#05422C",
-              "neutral-400": "#F4F4F4",
+              neutral: "#F4F4F4",
+              tertiary: '#9D9EA2'
           },
           backgroundColor:{
             primary: "#17AF26",
+            secondary: "#F3FBF4"
           },
           backgroundSize: {
               "50%": "50%",

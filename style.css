@@ -24,21 +24,53 @@ body {
       .btn-xl{
         @apply whitespace-nowrap text-base h-14 px-10 py-4 max-w-[165px] mt-10 lg:py-0 lg:mt-0 lg:max-w-max lg:leading-[64px] lg:h-[64px] lg:px-14 lg:text-lg bg-primary rounded-full text-white
       }
+      .h-minicart{
+        height: calc(100%-84px);
+      }
       .main-title {
         @apply text-[32px]/[120%] lg:mb-5 lg:text-[64px]/[110%] -tracking-[1.5px] lg:-tracking-[4px];
       }
-      .filter{
+      .imgFixed{
+        animation: moving 0.5s ease-in-out ;
+      }
+      @keyframes moving{
+      from{transform: scale(0.8); opacity: 0;}
+      to{transform: scale(1); opacity: 1;}
+      }
+      .filter,
+      .scrollbar{
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-      .filter::-webkit-scrollbar{
+      .filter::-webkit-scrollbar,
+      .scrollbar::-webkit-scrollbar{
           display: none;
       }
+    
       .topsell-next::after,
       .topsell-prev::after,
       .panel-next::after,
       .panel-prev::after {
         display: none;
+      }
+      .btn-tabs .active{
+          @apply border-[#05422C]  bg-[#F2F6F4]
+      }
+      .content-tabs .active{
+        @apply block
+      }
+      .content{
+        animation:onTab 0.3s ease-in ;
+      }
+      @keyframes onTab{
+        from{transform: translateX(10px); opacity: 0;}
+        to{transform: translateX(0); opacity: 1;}
+        }
+      .progress .active >span{
+          @apply bg-[#05422C] text-white
+      }
+      .progress .active >h5{
+        @apply font-medium text-[#060709] block
       }
       @media (min-width: 768px) {
         .lg\:btn {

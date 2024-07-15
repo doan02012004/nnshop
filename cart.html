@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/start-rating-svg.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="bg-secondary">
+            <div class="container text-center py-2">
+                <p class="text-[12px] lg:text-sm text-white">
+                    LIMITED OFFER: 30% OFF. Use RABBIT30 at Checkout.
+                    <span class="pl-4">23:00:00</span>
+                </p>
+            </div>
+        </div>
+        <div class="py-4 lg:border-b lg:border-neutral-400">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap justify-between lg:gap-8">
+                    <div class="order-1 flex items-center space-x-4 lg:-ml-9">
+                        <button class="lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                        <a href="">
+                            <img srcset="./assets/images/Logo.jpg 2x" alt="" class="w-[119px] lg:w-full" />
+                        </a>
+                    </div>
+                    <form action=""
+                        class="w-full order-3 lg:order-2 flex gap-2 border-t mt-4 lg:mt-0 border-neutral-400 pt-4 lg:w-auto lg:pt-0 lg:border-0">
+                        <input type="text"
+                            class="py-1 pl-6 pr-1 rounded-full bg-white border border-[#F4F4F4] w-full lg:w-[400px]"
+                            placeholder="Search" />
+                        <button type="submit" class="bg-primary rounded-full w-[58px] lg:w-12 h-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-white mx-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="order-2 lg:order-3 flex items-center gap-2 lg:gap-6 lg:-mr-9">
+                        <a href="" class="text-sm lg:text-base">Your Account</a> |
+                        <button class="relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            <span
+                                class="text-[12px] absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-white">1</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block">
+            <div class="container">
+                <nav>
+                    <ul class="lg:flex items-center justify-center space-x-10 text-[#46494F]">
+                        <li><a href="" class="block py-4">Shop All</a></li>
+                        <li><a href="" class="block py-4">Flower</a></li>
+                        <li><a href="" class="block py-4">Edibles</a></li>
+                        <li><a href="" class="block py-4">Concentrates</a></li>
+                        <li><a href="" class="block py-4">Mushrooms</a></li>
+                        <li><a href="" class="block py-4">Promotions/Bundles</a></li>
+                        <li><a href="" class="block py-4">Support</a></li>
+                        <li><a href="" class="block py-4">Rewards</a></li>
+                        <li><a href="" class="block py-4">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="bg-gray-100">
+        <div class="container">
+            <div class="progress flex items-center gap-3 lg:gap-4 w-max mx-auto py-4 lg:py-[28px]">
+                <div class=" flex items-center gap-2 active">
+                    <span
+                        class="bg-white size-[30px] lg:size-10 rounded-full text-[#05422C] text-sm lg:text-lg flex-shrink-0 flex justify-center items-center">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h5 class="text-sm text-gray-500 hidden lg:block">Shopping Cart</h5>
+                </div>
+                <span class="progress-stroke w-[38px] lg:w-[74px] h-px bg-gray-300"></span>
+                <div class="flex items-center gap-2">
+                    <span
+                        class="bg-white size-[30px] lg:size-10 rounded-full text-[#05422C] text-sm lg:text-lg flex-shrink-0 flex justify-center items-center">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <h5 class="text-sm text-gray-500 hidden lg:block">Checkout</h5>
+                </div>
+                <span class="progress-stroke  w-[38px] lg:w-[74px] h-px bg-gray-300"></span>
+                <div class=" flex items-center gap-2">
+                    <span
+                        class="bg-white  size-[30px] lg:size-10 rounded-full text-[#05422C] text-sm lg:text-lg flex-shrink-0 flex justify-center items-center">
+                        <i class="fa-solid fa-gem"></i>
+                    </span>
+                    <h5 class="text-sm text-gray-500 hidden lg:block">Order Complete</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-6 lg:py-8">
+        <div class="container">
+            <div>
+                <div class=" h-full lg:h-auto">
+                    <div class="flex justify-between items-center h-[54px] border-b border-b-gray-200 mb-5">
+                        <h1 class="text-xl/[150%]">Your Cart</h1>
+                        <span class="text-lg text-[#9D9EA2]">(0)</span>
+                    </div>
+                    <div class="mb-5">
+                        <div class="cart-item border-b border-b-gray-200 mb-5">
+                            <div class="flex">
+                                <div
+                                    class="h-14 w-14 rounded-lg border border-gray-300 overflow-hidden flex-shrink-0 mr-4">
+                                    <img src="./assets/images/product1.png" class="w-full object-contain"
+                                        alt="">
+                                </div>
+                                <div class="w-full">
+                                    <div class="mb-4">
+                                        <div class="flex justify-between items-center w-auto mb-[6px]">
+                                            <h3 class="text-base text-[#05422C] w-[166px] lg:w-auto">Mix And
+                                                Match
+                                                Shatter/Budder 28g (4 X
+                                                7G)</h3>
+                                            <button
+                                                class="w-7 h-7 rounded-full border border-gray-300 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-black hover:text-white">
+                                                <span>x</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-between items-center w-auto">
+                                            <div>
+                                                <span
+                                                    class="text-sm font-light text-[#9D9EA2] mr-3">2x</span>
+                                                <span class="text-sm/[150%] text-[#717378]">$120</span>
+                                            </div>
+                                            <span class="text-sm/[150%] ">$245.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="flex justify-between items-center w-auto mb-[6px]">
+                                            <h5 class="text-sm">Add Integra Pack - 4g</h5>
+                                            <button
+                                                class="w-7 h-7 rounded-full border border-gray-300 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-black hover:text-white">
+                                                <span>x</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-between items-center w-auto">
+                                            <div>
+                                                <span
+                                                    class="text-sm font-light text-[#9D9EA2] mr-3">2x</span>
+                                                <span class="text-sm/[150%] text-[#717378]">$120</span>
+                                            </div>
+                                            <span class="text-sm/[150%] ">$245.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="flex justify-between items-center w-auto mb-[6px]">
+                                            <h5 class="text-sm">Add Integra Pack - 4g</h5>
+                                            <button
+                                                class="w-7 h-7 rounded-full border border-gray-300 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-black hover:text-white">
+                                                <span>x</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-between items-center w-auto">
+                                            <div>
+                                                <span
+                                                    class="text-sm font-light text-[#9D9EA2] mr-3">2x</span>
+                                                <span class="text-sm/[150%] text-[#717378]">$120</span>
+                                            </div>
+                                            <span class="text-sm/[150%] ">$245.00</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="pt-4 border-t border-t-gray-200 flex justify-between items-center mb-6">
+                                        <span class="text-sm/[150%] text-[#9D9EA2]">Subtotal</span>
+                                        <span class="text-sm/[150%]">$245.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item border-b border-b-gray-200 mb-5">
+                            <div class="flex">
+                                <div
+                                    class="h-14 w-14 rounded-lg border border-gray-300 overflow-hidden flex-shrink-0 mr-4">
+                                    <img src="./assets/images/product1.png" class="w-full object-contain"
+                                        alt="">
+                                </div>
+                                <div class="w-full">
+                                    <div class="mb-4">
+                                        <div class="flex justify-between items-center w-auto mb-[6px]">
+                                            <h3 class="text-base text-[#05422C] w-[166px] lg:w-auto">Mix And
+                                                Match
+                                                Shatter/Budder 28g (4 X
+                                                7G)</h3>
+                                            <button
+                                                class="w-7 h-7 rounded-full border border-gray-300 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-black hover:text-white">
+                                                <span>x</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-between items-center w-auto">
+                                            <div>
+                                                <span
+                                                    class="text-sm font-light text-[#9D9EA2] mr-3">2x</span>
+                                                <span class="text-sm/[150%] text-[#717378]">$120</span>
+                                            </div>
+                                            <span class="text-sm/[150%] ">$245.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="flex justify-between items-center w-auto mb-[6px]">
+                                            <h5 class="text-sm">Add Integra Pack - 4g</h5>
+                                            <button
+                                                class="w-7 h-7 rounded-full border border-gray-300 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-black hover:text-white">
+                                                <span>x</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-between items-center w-auto">
+                                            <div>
+                                                <span
+                                                    class="text-sm font-light text-[#9D9EA2] mr-3">2x</span>
+                                                <span class="text-sm/[150%] text-[#717378]">$120</span>
+                                            </div>
+                                            <span class="text-sm/[150%] ">$245.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="flex justify-between items-center w-auto mb-[6px]">
+                                            <h5 class="text-sm">Add Integra Pack - 4g</h5>
+                                            <button
+                                                class="w-7 h-7 rounded-full border border-gray-300 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-black hover:text-white">
+                                                <span>x</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex justify-between items-center w-auto">
+                                            <div>
+                                                <span
+                                                    class="text-sm font-light text-[#9D9EA2] mr-3">2x</span>
+                                                <span class="text-sm/[150%] text-[#717378]">$120</span>
+                                            </div>
+                                            <span class="text-sm/[150%] ">$245.00</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="pt-4 border-t border-t-gray-200 flex justify-between items-center mb-6">
+                                        <span class="text-sm/[150%] text-[#9D9EA2]">Subtotal</span>
+                                        <span class="text-sm/[150%]">$245.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-screen">
+
+    </section>
+
+    <footer class="relative">
+        <div class="absolute top-[-176px] lg:left-[50%] lg:translate-x-[-50%] lg:top-[-208px]">
+            <div class="container z-10 ">
+                <div
+                    class="w-full lg:flex-row lg:items-center rounded-3xl px-6 py-10 lg:p-16 lg:min-h-[342px] bg-[#05422C] bg-cover bg-no-repeat bg-center ">
+                    <h1 class="main-title text-white lg:w-[789px] mb-4 lg:mb-6">UNLOCK 20% OFF YOUR FIRST ORDER</h1>
+                    <p
+                        class="text-[#C3D2CC] text-sm pb-0 lg:pb-8 lg:text-[20px]/[150%] border-b border-b-gray-200 lg:mb-8">
+                        Reveal coupon code by entering your email</p>
+                    <form class="flex flex-col gap-4  lg:items-center lg:flex-row lg:gap-8 lg:justify-between">
+                        <input type="text"
+                            class="px-11 py-6 w-full  bg-transparent border border-gray-200 rounded-full text-white outline-0"
+                            placeholder="Email Address">
+                        <button type="submit"
+                            class="py-6 w-full px-10 text-left lg:w-auto bg-[#17AF26] rounded-full text-white whitespace-nowrap">Reveal
+                            coupon</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#01100B] z-0 ">
+            <div class="container">
+                <div class="pt-[240px] lg:pt-[380px] pb-16">
+                    <div class="flex flex-col lg:flex-row gap-8 pb-16 mb-10 border-b border-b-gray-200">
+                        <div class="max-w-[379px] pr-[66px] lg:pr-[103px]">
+                            <div class="mb-6">
+                                <img src="./assets/images/logo-footer.png" alt="">
+                            </div>
+                            <p class="text-[#9D9EA2] text-base">#1 Canadian top rated online dispensary that meets the
+                                customers
+                                needs in every single medical marijuana aspect. The team here at TopShelfBC is
+                                heavily involved in the Canadian cannabis industry for over 15 years. We strive
+                                to provide the top quality products,
+                                service and care at the lowest prices you’ll ever find.</p>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-10">
+                                <h1 class="font-medium text-[20px]/[150%] text-white mb-6">QUICK LINK</h1>
+                                <div class="grid grid-cols-2 gap-6 lg:gap-8">
+                                    <ul class="flex flex-col gap-4 *:text-sm text-[#9D9EA2]">
+                                        <li><a href="#">Track Your Order</a></li>
+                                        <li><a href="#">Shop All</a></li>
+                                        <li><a href="#">Flower</a></li>
+                                        <li><a href="#">Edibles</a></li>
+                                        <li><a href="#">Concentrates</a></li>
+                                        <li><a href="#">Refunds</a></li>
+                                    </ul>
+                                    <ul class="flex flex-col gap-4 *:text-sm text-[#9D9EA2]">
+                                        <li><a href="#">Mushrooms</a></li>
+                                        <li><a href="#">Promotions / Bundles</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Reward</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Shipping Faq</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mb-10">
+                                <h1 class="font-medium text-[20px]/[150%] text-white mb-6">CONTACT US</h1>
+                                <ul class="flex flex-col gap-4 *:text-sm text-[#9D9EA2]">
+                                    <li><a href="#">info@topshelfbc.cc</a></li>
+                                </ul>
+                            </div>
+                            <div class="mb-10">
+                                <h1 class="font-medium text-[20px]/[150%] text-white mb-6">MORE</h1>
+                                <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+                                    <ul class="flex flex-col gap-4 *:text-sm text-[#9D9EA2]">
+                                        <li><a href="#">Buy weed online in Canada</a></li>
+                                        <li><a href="#">Buy weed online in New Brunswick</a></li>
+                                        <li><a href="#">Buy weed online in Prince Edward Island</a></li>
+                                        <li><a href="#">Buy weed online in Northwest Territories</a></li>
+                                        <li><a href="#">Buy weed online in Saskatchewan</a></li>
+
+                                    </ul>
+                                    <ul class="flex flex-col gap-4 *:text-sm text-[#9D9EA2]">
+                                        <li><a href="#">Buy weed online in Manitoba</a></li>
+                                        <li><a href="#">Buy weed online in Quitebec</a></li>
+                                        <li><a href="#">Buy weed online in British Columbia</a></li>
+                                        <li><a href="#">Buy weed online in Ontario</a></li>
+                                        <li><a href="#">Buy weed online in Alberta</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-8 rounded-md overflow-hidden">
+                                    <img src="./assets/logo/mastercard.png" class="object-cover w-full" alt="">
+                                </div>
+                                <div class="w-14 h-8 rounded-md overflow-hidden">
+                                    <img src="./assets/logo/pay2.png" class="object-cover w-full" alt="">
+                                </div>
+                                <div class="w-14 h-8 rounded-md overflow-hidden">
+                                    <img src="./assets/logo/pay3.png" class="object-cover w-full" alt="">
+                                </div>
+                                <div class="w-14 h-8 rounded-md overflow-hidden">
+                                    <img src="./assets/logo/pay4.png" class="object-cover w-full" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#717378] flex gap-10 flex-col-reverse lg:flex-row justify-between items-center">
+                        <p>&copy; 2022 Top Shelf BC. All Rights Reserved. </p>
+                        <div class="flex items-center gap-4 lg:gap-8">
+                            <p>Out Of Stock</p>
+                            <p>Privacy Policy</p>
+                            <p>Terms & Conditions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/jquery.start-rating.svg.js"></script>
+    <script type="module" src="./src/main.js"></script>
+
+
+</body>
+
+</html>
